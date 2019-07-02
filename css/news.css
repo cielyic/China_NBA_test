@@ -1,0 +1,50 @@
+.nav-index .nav-indexPage a {
+	color: white;
+}
+.content{
+	width: 100%;
+	/*height: 2000px;*/
+	background: #F6F6F6;
+}
+.content-news{
+	width: 1200px;
+	/*border: 1px solid black;*/
+	/*height: 2000px;*/
+	margin: 0 auto;
+	padding: 10px;
+	background: white;
+}
+.content-title{
+	width: 870px;
+	/*border: 1px solid pink;*/
+	padding: 0 10px;
+}
+.content-title h1{
+	padding-bottom: 16px;
+	font-family: '微软雅黑';
+	font-size: 26px;
+	font-weight: 500;
+}
+.content-date{
+	height: 18px;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+.content-shows{
+	padding: 0 10px;
+	padding-top: 62px; 
+	width: 870px;
+	/*border: 1px solid red;*/
+}
+.content-shows img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.content-shows P{
+	    margin-bottom: 29px;
+	    font-size: 16px;
+	    line-height: 28px;
+	    text-indent: 2em;
+}

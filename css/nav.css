@@ -1,0 +1,238 @@
+/*简单清除浏览器默认边距*/
+			*{
+				margin: 0;
+				padding: 0;'
+			}
+			li{
+				list-style: none;
+			}
+			/*头部部分样式*/
+			.header{
+				background-color: #006bb7;
+				width: 100%;
+				height: 120px;
+			}
+			/*头部中间内容区域*/
+			.header-wrap{
+				background: url('../images/header-bg_bb39ce.png');
+				width: 1200px;
+				height: 120px;
+				margin: 0 auto;
+			}
+			/*头部内容上方图标区域*/
+			.header-main{
+				width: 100%;
+				height: 80px;
+				margin: 0 auto;
+				/*border: 1px solid blue;*/
+			}
+			/*头部上方左边图片区域*/
+			.header-main .nav-logo .nav-nba{
+				padding-left: 45px;
+				padding-top: 9px;
+				width: 250px;
+				height: 71px;
+				float: left;
+			}
+			.header-main .nav-logo .nav-nba img{
+				width: 100%;
+				height: 100%;
+			}
+			/*头部上方右边图片区域*/
+			.header-main .nav-logo .nav-com{
+				margin: 36px 0 0 15px;
+				float: left;
+				width: 60px;
+				height: 25px;
+			}
+			.header-main .nav-logo .nav-com img{
+				width: 100%;
+				height: 100%;
+			}
+			/*头部上方右上角按钮区域*/
+			.header-button{
+				float: right;
+				height: 70px;
+				width: 335px;
+				position: relative;
+				top: 10px;
+			}
+			/*头部上方右上角每个按钮*/
+			.header-button span{
+				margin-left: 10px;
+				height: 19px;
+				float: left;
+			}
+			/*头部上方每个按钮中的a标签*/
+			.header-button a{
+				height: 19px;
+				display: inline-block;
+			}
+			/*头部上方右上角第一个按钮背景图片*/
+			.header-button .button1{
+				width: 64px;
+				background: url('../images/1.png') no-repeat;
+			}
+			.header-button .button2{
+				width: 36px;
+				background: url('../images/2.png') no-repeat;
+			}
+			.header-button .button3{
+				width: 42px;
+				background: url('../images/3.png') no-repeat;
+			}
+			.header-button .button4{
+				width: 68px;
+				background: url('../images/4.png') no-repeat;
+			}
+			.header-button .button5{
+				width: 75px;
+				background: url('../images/5.png') no-repeat;
+				position: relative;
+				display: inline-block;
+				height: 25px;
+				background-heig: 79px;
+			}
+
+			.header-button .button5:hover .nav-sub{
+				display: block;
+			}
+			/*头部上方右边图标最后一个下拉列表区域*/
+			.header-button .button5 .nav-sub{
+				position: absolute;
+				top: 22px;
+				left: 0;
+				width: 160px;
+				background: #002f50;
+				color: white;
+				display: none;
+			}
+			/*头部上方右边图标最后一个下拉列表区域li*/
+			.header-button .button5 .nav-sub li{
+				width: 100%;
+				clear: left;
+				height: 40px;
+				line-height: 40px;
+				font-size: 15px;
+				padding-left: 8px;
+			}
+			/*头部上方右边图标最后一个下拉列表区域li悬停改变颜色*/
+			.header-button .button5 .nav-sub li:hover{
+				background: #006bb7;
+			}
+			/*头部下方内容区域*/
+			.nav-index{
+				height: 40px;
+				/*border: 1px solid red;*/
+				padding-left: 40px;
+				box-sizing: content-box;
+			}
+			/*头部下方导航条区域*/
+			.nav-wrap{
+				float: left;
+			}
+			/*头部下方导航条中每一个li区域*/
+			.nav-index   ul li{
+				height: 40px;
+				list-style: none;
+				float: left;
+				margin-right: 23px;
+				box-sizing: border-box;
+				
+			}
+			/*头部下方每一个li中导航a标签*/
+			.nav-index   ul li a{
+				padding-top: 6px;
+				padding-left: 10px;
+				padding-right: 15px;
+				display: inline-block;
+				height: 35px;
+				color: white;
+				font-family:monospace,serif;
+				text-decoration: none;
+				font-family: '微软雅黑';
+				box-sizing: content-box;
+			}
+			/*头部下方导航条首页字体覆盖*/
+			.nav-index  .nav-indexPage a{
+				color: #00AEFF;
+			}
+			/*头部下方导航条悬停颜色改变*/
+			.nav-index   ul li a:hover{
+				color: #00AEFF;
+			}
+			/*头部下方导航条悬停显示下拉列表*/
+			.nav-people a:hover .nav-sub,.nav-schedule a:hover .nav-sub,.nav-ranking a:hover .nav-sub,.nav-data a:hover .nav-sub,.nav-project a:hover .nav-sub,.nav-more a:hover .nav-sub{
+				display: block;
+			}
+			/*头部下方导航条设置相对定位*/
+			.nav-people,.nav-schedule,.nav-ranking,.nav-data,.nav-project,.nav-more{
+				position: relative;
+			}		
+			/*头部下方导航条悬停产生的下拉列表区域*/
+			.nav-index .nav-sub{
+				position:absolute;
+				top: 40px;
+				left: 0;
+				width: 160px;
+				background: #002f50;
+				color: white;
+				display: none;
+			}
+			.nav-sub:before{
+			    content: '';
+			    position: absolute;
+			    top: -6px;
+			    left: 20px;
+			    width: 12px;
+			    height: 6px;
+			    background: url('../images/nav-sub.png') no-repeat;
+			}
+			/*头部下方导航条悬停产生的下拉列表li*/
+			.nav-index .nav-sub li{
+				width: 100%;
+				clear: left;
+				height: 40px;
+				line-height: 40px;
+				font-size: 15px;
+				padding-left: 8px;
+			}
+			/*头部下方导航条悬停产生的下拉列表li悬停改变背景颜色*/
+			.nav-index .nav-sub li:hover{
+				background: #006bb7;
+			}
+			/*头部下方右部图标区域*/
+			.nav-side{
+				float: right;
+				width: 75px;
+				height: 37px;
+				padding:3px;
+				box-sizing: border-box;
+			}
+			/*头部下方右部图标左边部分*/
+			.side-left{
+				margin-top: 5px;
+				width: 35px;
+				height: 30px;
+				float: left;
+			}
+			.side-left .side-search{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background: url('../images/search.png') no-repeat;
+			}
+			/*头部下方右部图标右边部分*/
+			.side-right{
+				width: 30px;
+				height: 30px;
+				float: left;
+			}
+			.side-right .side-head{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background: url('../images/head.png') no-repeat;
+			}
+
+			
